@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sophie Bluel - Architecte d'intérieur</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="./assets/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="../Backend/login.js" defer></script>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html" class="nav-link" data-active="false">projets</a></li>
+					<li><a href="contact.html" class="nav-link" data-active="false">contact</a></li>
+					<li><a class="nav-link" data-active="true">login</a></li>
+					<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<section id="login">
+				<h2 class="login-title">Log In</h2>
+				<form id="loginForm" method="post">
+					<label for="mail">E-mail</label>
+					<input type="mail" name="mail" id="mail">
+					<label for="password">Mot de passe</label>
+					<input type="password" name="password" id="password">
+					<span id="error"></span>
+					<input type="submit" value="Se connecter" id="button">
+					<a href="" class="password-forgot">Mot de Passe oublié</a>
+				</form>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<nav>
+				<ul>
+					<li><a href="#">Mentions Légales<a/></li>
+				</ul>
+			</nav>
+		</footer>
+
+	</body>
+</html>
