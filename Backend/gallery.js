@@ -199,16 +199,17 @@ function deleteProject(id) {
     .then(() => showProjects());
 }
 async function deleteGallery() {
-    const projectsList = await getProjects();
+    await getProjects();
     for (let i = projectsList.length - 1; i >= 0; i--) {
         const project = projectsList[i];
         deleteProject(project.id);
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(wait => setTimeout(wait, 1000));
     }
 }
 
 // Affichage des projets
 async function showProjects() {
+    await getProjects()
     showMainProjects("", projectsList)
     showMiniProjects(projectsList)
 }
