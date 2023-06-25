@@ -12,3 +12,4 @@ if(!sessionStorage.userData) {
 } else {
     projectsFilters.style.display = "none";
 };
+
